@@ -11,22 +11,45 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar>
-        <Toolbar>
-          <IconButton
-            size='large'
-            edge='start'
-            color='inherit'
-            aria-label='menu'
-            sx={{ mr: 2 }}
+    <Box
+      sx={{
+        flexGrow: 1,
+      }}
+    >
+      <AppBar
+        sx={{
+          backgroundColor: '#fff',
+          color: '#000',
+        }}
+      >
+        <Toolbar
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            // width: '100%',
+          }}
+        >
+          {/* 로고 */}
+          <Typography variant='h6'>E-commerce</Typography>
+          {/* 카테고리 */}
+          <Box
+            sx={{
+              display: 'flex',
+              // justifyContent: '',
+              // p: 2,
+              alignItems: 'center',
+            }}
           >
+            <div style={{ padding: '10px' }}>카테고리1</div>
+            <div style={{ padding: '10px' }}>카테고리2</div>
+            <div style={{ padding: '10px' }}>카테고리3</div>
+          </Box>
+
+          {/* 버튼 및 아이콘 */}
+          <IconButton size='large' color='inherit'>
             <MenuIcon />
           </IconButton>
-          <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
-            News
-          </Typography>
-          <Button color='inherit'>Login</Button>
         </Toolbar>
       </AppBar>
     </Box>
