@@ -9,11 +9,13 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-const Header = () => {
+const Header = ({ click }) => {
   return (
     <Box
       sx={{
+        display: 'flex',
         flexGrow: 1,
+        // minHeight: '100vh',
       }}
     >
       <AppBar
@@ -47,7 +49,13 @@ const Header = () => {
           </Box>
 
           {/* 버튼 및 아이콘 */}
-          <IconButton size='large' color='inherit'>
+          <IconButton
+            size='large'
+            color='inherit'
+            onClick={() => {
+              console.log('나와');
+            }}
+          >
             <MenuIcon />
           </IconButton>
         </Toolbar>
