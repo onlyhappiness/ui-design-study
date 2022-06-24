@@ -1,29 +1,14 @@
-import Header from '../components/layouts/Header/Header';
-import '../styles/globals.css';
+import FullLayout from '../components/layouts/FullLayout';
+// import '../styles/globals.css';
 
+// const MyApp = ({ children }) => {
 function MyApp({ Component, pageProps }) {
   return (
-    <div
-      style={{
-        display: 'flex',
-        minHeight: '100vh',
-        overflow: 'hidden',
-        width: '100%',
-      }}
-    >
-      <Header />
-      <div
-        style={{
-          display: 'flex',
-          width: '100%',
-          // overflow: 'hidden',
-          paddingTop: '70px',
-          // padding: '10px',
-        }}
-      >
+    <>
+      <FullLayout>
         <Component {...pageProps} />
-      </div>
-    </div>
+      </FullLayout>
+    </>
   );
 }
 

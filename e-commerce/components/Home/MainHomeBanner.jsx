@@ -1,8 +1,12 @@
 import React from 'react';
-import { Paper } from '@mui/material';
+import { Box, Card, Paper, Typography } from '@mui/material';
 
 const MainHomeBanner = () => {
-  return <Paper>skdhk</Paper>;
+  return (
+    <>
+      <Card>나와</Card>
+    </>
+  );
 };
 
 export default MainHomeBanner;

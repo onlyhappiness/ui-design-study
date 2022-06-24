@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
-import Header from '../components/layouts/Header/Header';
-import styles from '../styles/Home.module.css';
 import { Grid } from '@mui/material';
 import MainHomeBanner from '../components/Home/MainHomeBanner';
 
@@ -11,8 +8,6 @@ export default function Home() {
 
   return (
     <>
-      {/* <Header click={click} setClick={setClick} /> */}
-
       {/* 메인 홈 배너 */}
 
       <Grid container spacing={3}>
