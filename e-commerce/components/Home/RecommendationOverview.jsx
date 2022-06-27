@@ -17,7 +17,9 @@ import { recommend } from '../../data/dashboard';
 const RecommendationOverview = () => {
   return (
     <Box>
-      <Typography variant='h6'>Special Recommendation</Typography>
+      <Typography variant='h6' sx={{ marginBottom: '15px' }}>
+        Special Recommendation
+      </Typography>
 
       {/* <Typography variant='body1'>View All</Typography> */}
       <>
@@ -26,10 +28,10 @@ const RecommendationOverview = () => {
           style={{
             height: '100%',
             width: '100%',
-            marginTop: '30px',
+            // marginTop: '5px',
           }}
           spaceBetween={30}
-          slidesPerView={4}
+          slidesPerView={3}
           pagination={{ clickable: true }}
         >
           {recommend.map((data, i) => {

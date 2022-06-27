@@ -15,6 +15,7 @@ const PageWrapper = styled.div`
   overflow: hidden;
   margin-top: 64px;
   width: 100%;
+  padding: 20px 10px;
 `;
 
 const FullLayout = ({ children }) => {
