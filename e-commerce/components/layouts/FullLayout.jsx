@@ -13,7 +13,8 @@ const MainWrapper = styled.div`
 const PageWrapper = styled.div`
   display: flex;
   overflow: hidden;
-  padding-top: 64px;
+  margin-top: 64px;
+  width: 100%;
 `;
 
 const FullLayout = ({ children }) => {

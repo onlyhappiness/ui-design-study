@@ -4,7 +4,16 @@ import { Box, Card, Paper, Typography } from '@mui/material';
 const MainHomeBanner = () => {
   return (
     <>
-      <Card>나와</Card>
+      <Card>
+        <Box
+          sx={{
+            width: '100%',
+            height: '30vh',
+          }}
+        >
+          나와
+        </Box>
+      </Card>
     </>
   );
 };
